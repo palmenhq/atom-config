@@ -1,0 +1,164 @@
+const assert = require('assert');
+const proxyquire = require('proxyquire');
+
+const selectConfig = require('../../../src/config/selectConfig');
+
+const {
+  getPage,
+  getInternalErrorPage,
+  getNotFoundPage,
+} = proxyquire('../../../src/entryPoints/pages', {
+  '../utils/constants': {
+    SERVER_ADDRESS: 'http://some.test',
+  },
+});
+
+
+describe('entryPoints/pages', () => {
+  describe('getPage', () => {
+    it('returns the expected result given a valid page', (done) => {
+      // Given
+      const config = selectConfig('test');
+      const page = 'page-with-image';
+      const expectedPage = {
+        pages: {
+          byRoute: {
+            '/page-with-image': {
+              title: 'Page With Image',
+              meta: {},
+              modules: ['imageModule'],
+              canonical: 'https://www.linasmatkasse.se',
+              route: '/page-with-image',
+            },
+          },
+        },
+        modules: {
+          byId: {
+            imageModule: {
+              id: 'imageModule',
+              type: 'testModule',
+              settings: {
+                src: 'http://some.test/v1/test/assets/images/error-404/hero-image-mobile.jpg',
+              },
+            },
+          },
+        },
+      };
+      // When
+      getPage(page, {}, config)
+        .then((completedPage) => {
+          // Then
+          assert.deepEqual(completedPage, expectedPage);
+          done();
+        });
+    });
+
+    it('returns an error with code ENOENT given an unknown page', (done) => {
+      // Given
+      const config = selectConfig('test');
+      const page = 'unknown';
+      const expectedErrorCode = 'ENOENT';
+      // When
+      getPage(page, {}, config)
+        .then(() => {
+          done(new Error('Promise resolved when it shouldn\'t'));
+        })
+        .catch((error) => {
+          // Then
+          assert.equal(error.code, expectedErrorCode);
+          done();
+        });
+    });
+
+    it('returns an error without code ENOENT given a file in the page is broken', (done) => {
+      // Given
+      const config = selectConfig('test');
+      const page = 'bad-json/bad-file';
+      const expectedNotToBeErrorCode = 'ENOENT';
+      // When
+      getPage(page, {}, config)
+        .then(() => {
+          done(new Error('Did not return an error as expected'));
+        })
+        .catch((error) => {
+          // Then
+          assert.notEqual(error.code, expectedNotToBeErrorCode);
+          done();
+        });
+    });
+  });
+
+  describe('getNotFoundPage', () => {
+    it('returns the expected error page and sets the correct page route ', (done) => {
+      // Given
+      const config = selectConfig('test');
+      const originalRoute = 'unknown';
+      const expectedErrorPage = {
+        pages: {
+          byRoute: {
+            '/unknown': {
+              title: 'Page not found',
+              meta: [],
+              modules: ['notFound'],
+              route: '/unknown',
+              isErrorPage: true,
+            },
+          },
+        },
+        modules: {
+          byId: {
+            notFound: {
+              id: 'notFound',
+              type: 'httpError',
+            },
+          },
+        },
+      };
+      // When
+      getNotFoundPage(originalRoute, {}, config)
+        .then((page) => {
+          console.dir(page.pages.byRoute);
+          console.dir(expectedErrorPage.pages.byRoute);
+          // Then
+          assert.deepEqual(page, expectedErrorPage);
+          done();
+        });
+    });
+  });
+
+  describe('getInternalErrorPage', () => {
+    it('returns the expected error page and sets the correct page route ', (done) => {
+      // Given
+      const config = selectConfig('test');
+      const originalRoute = 'someRoute';
+      const expectedErrorPage = {
+        pages: {
+          byRoute: {
+            '/someRoute': {
+              title: 'Error page',
+              meta: [],
+              modules: ['error1'],
+              route: '/someRoute',
+              isErrorPage: true,
+            },
+          },
+        },
+        modules: {
+          byId: {
+            error1: {
+              id: 'error1',
+              type: 'httpError',
+            },
+          },
+        },
+      };
+      // When
+      getInternalErrorPage(originalRoute, {}, config)
+        .then((page) => {
+          // Then
+          assert.deepEqual(page, expectedErrorPage);
+          done();
+        });
+    });
+  });
+});

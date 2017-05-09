@@ -1,0 +1,35 @@
+"*":
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
+    webpack: true
+  core:
+    disabledPackages: [
+      "symbols-view"
+      "welcome"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+    themes: [
+      "nord-atom-ui"
+      "nord-atom-syntax"
+    ]
+  docblockr:
+    param_description: false
+    return_description: false
+  editor:
+    fontSize: 13
+    showInvisibles: true
+  "exception-reporting":
+    userId: "1444d7bd-c72d-4d3a-8bc9-b86886939bf4"
+  "git-diff": {}
+  invisibles:
+    cr: false
+    eol: ""
+    space: "·"
+    tab: "⇥"
+  "split-diff":
+    muteNotifications: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
