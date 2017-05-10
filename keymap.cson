@@ -42,7 +42,9 @@
   'cmd-shift-l': 'linter-eslint:fix-file'
   'cmd-e': 'pane:show-next-recently-used-item'
   'cmd-shift-e': 'pane:show-previous-recently-used-item'
-
+  'ctrl-shift-r': 'mocha-test-runner:run'
+  'cmd-shift-down': 'navigate:forward-new'
+  'cmd-g': 'git-diff-details:toggle-git-diff-details'
 '.platform-darwin atom-workspace':
   'cmd-0': 'tree-view:toggle'
   'cmd-1': 'tree-view:toggle-focus'
@@ -68,6 +70,3 @@
 
 '.platform-darwin atom-workspace atom-text-editor':
   'cmd-down': 'goto-definition:go'
-
-'atom-text-editor':
-  'cmd-g': 'git-diff-details:toggle-git-diff-details'

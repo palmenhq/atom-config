@@ -17,7 +17,7 @@
     param_description: false
     return_description: false
   editor:
-    fontSize: 13
+    fontSize: 12
     showInvisibles: true
   "exception-reporting":
     userId: "1444d7bd-c72d-4d3a-8bc9-b86886939bf4"
@@ -27,6 +27,10 @@
     eol: ""
     space: "·"
     tab: "⇥"
+  navigate:
+    f1: "http://devdocs.io/#q=&searchterm"
+    f10: "https://duckduckgo.com/?q=&searchterm"
+    f6: "http://www.bing.com/search?q=&searchterm"
   "split-diff":
     muteNotifications: true
   "tree-view":
