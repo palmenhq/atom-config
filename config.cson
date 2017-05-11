@@ -2,6 +2,9 @@
   "autocomplete-modules":
     babelPluginModuleResolver: true
     webpack: true
+  "clipboard-history":
+    enableCopyLine: false
+    showClearHistoryButton: false
   core:
     disabledPackages: [
       "symbols-view"

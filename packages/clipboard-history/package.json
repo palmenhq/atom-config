@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+        "spec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/apm-install-dir-117410-3538-14h2gcf.rk4lf5stt9"
+    ]
+  ],
+  "_from": "../d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+  "_id": "clipboard-history@0.6.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/clipboard-history",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+    "spec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+  "_shasum": "0906edf2c61621878bcaa880c31e51feac0acbac",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-117410-3538-t762pq.eewzbbj4i/package.tgz",
+  "_where": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/apm-install-dir-117410-3538-14h2gcf.rk4lf5stt9",
+  "activationCommands": {
+    "atom-workspace": [
+      "clipboard-history:copy",
+      "clipboard-history:paste"
+    ]
+  },
+  "author": {
+    "name": "Andrei Demian",
+    "url": "http://twitter.com/unDemian"
+  },
+  "bugs": {
+    "url": "https://github.com/unDemian/clipboard-history/issues"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "description": "Keep a history of your clipboard items. Let you paste them back in, as needed.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0",
+    "jquery": "^2"
+  },
+  "homepage": "https://github.com/unDemian/clipboard-history#readme",
+  "license": "MIT",
+  "main": "./lib/clipboard-history",
+  "name": "clipboard-history",
+  "optionalDependencies": {},
+  "readme": "# clipboard-history package\n\nKeep a history of your clipboard items. Let you paste them back in, as needed.\n\nIt gets updated regularly, check out the [changelog](https://github.com/unDemian/clipboard-history/blob/master/CHANGELOG.md).\n\n![A screenshot of your spankin' package](https://raw.githubusercontent.com/unDemian/clipboard-history/master/demo.gif)\n\n## Usage\n\n- `Cmd-Shift-V` on MacOS\n- `Ctrl-Shift-V` on Windows + Linux\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unDemian/clipboard-history.git"
+  },
+  "version": "0.6.6"
+}
