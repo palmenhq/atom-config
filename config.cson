@@ -1,4 +1,6 @@
 "*":
+  "atom-ternjs":
+    inlineFnCompletionDocumentation: true
   "autocomplete-modules":
     babelPluginModuleResolver: true
     webpack: true

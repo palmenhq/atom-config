@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
+        "raw": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
-        "spec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
+        "rawSpec": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
+        "spec": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/apm-install-dir-11745-26946-1doftzp.slt3p7gb9"
+      "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/apm-install-dir-11749-32600-1tf95lx.zna3t2zkt9"
     ]
   ],
-  "_from": "../d-11745-26946-1wjdbl9.jz6w29/package.tgz",
+  "_from": "../d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
   "_id": "es6-javascript@1.0.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/es6-javascript",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
+    "raw": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
-    "spec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
+    "rawSpec": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
+    "spec": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-11745-26946-1wjdbl9.jz6w29/package.tgz",
+  "_resolved": "file:../d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
   "_shasum": "691aa7b6cb62c7665a1155c55c9e64ee3104dd52",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/d-11745-26946-1wjdbl9.jz6w29/package.tgz",
-  "_where": "/private/var/folders/4s/t4gsb6cn5zb20gh_h_h5tdlw0000gn/T/apm-install-dir-11745-26946-1doftzp.slt3p7gb9",
+  "_spec": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/d-11749-32600-1xcf7hs.tnvmjqncdi/package.tgz",
+  "_where": "/private/var/folders/sj/vnvtlmqx7nb0p3y1rkc2pk1c0000gn/T/apm-install-dir-11749-32600-1tf95lx.zna3t2zkt9",
   "activationCommands": {
     "atom-text-editor": [
       "es6-javascript:end-line",
